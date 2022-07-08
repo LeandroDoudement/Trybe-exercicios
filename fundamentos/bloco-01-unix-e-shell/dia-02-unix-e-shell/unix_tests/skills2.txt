@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Ingles
+Portugues
+Html
+Cs
+Javascript
