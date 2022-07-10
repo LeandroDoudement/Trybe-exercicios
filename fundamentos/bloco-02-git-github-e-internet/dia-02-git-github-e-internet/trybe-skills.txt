@@ -1,3 +1,6 @@
 Unix
 Bash
 Git
+Ingles
+Front end
+Back end
