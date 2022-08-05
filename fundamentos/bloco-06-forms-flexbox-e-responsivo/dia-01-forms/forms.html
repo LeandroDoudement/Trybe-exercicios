@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="form-style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="display-4">TrybeTrip</h1>
+        <p class="lead">
+          Preencha os dados e concorra a uma viagem paga pela Trybe
+        </p>
+      </div>
+    </header>
+    <main>
+      <form action="" method="get" class="form container">
+        <div class="form-group mb-3">
+          <label for="input-name" class="mb-3">Nome:</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="input-name"
+            placeholder="Digite seu nome completo aqui"
+            required
+            minlength="10"
+            maxlength="40"
+          />
+          <span id="passwordHelpInline" class="form-text">
+            Limitado entre 10 e 40 caracteres.
+        </div>
+        <div class="form-group mb-3">
+          <label for="input-email" class="mb-3">Email:</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="input-email"
+            placeholder="Digite seu email aqui"
+            required
+            minlength="10"
+            maxlength="50"
+          />
+          <span id="passwordHelpInline" class="form-text">
+            Limitado entre 10 e 50 caracteres.
+        </div>
+
+        <div class="form-group mb-3">
+          <input
+            type="radio"
+            id="cidade"
+            name="destino-preferido"
+            value="cidade1"
+          />
+          <label for="cidade" class="radio-labels">Cidade</label>
+
+          <input
+            type="radio"
+            id="campo"
+            name="destino-preferido"
+            value="campo"
+          />
+          <label for="campo" class="radio-labels">Campo</label>
+
+          <input
+            type="radio"
+            id="praia"
+            name="destino-preferido"
+            value="praia"
+          />
+          <label for="praia" class="radio-labels">Praia</label>
+
+          <input
+            type="radio"
+            id="montanhas"
+            name="destino-preferido"
+            value="montanhas"
+          />
+          <label for="montanhas" class="radio-labels">Montanhas</label>
+        </div>
+        <div class="form-group mb-3">
+          <label for="textarea" class="mb-3"
+            >Por que você deveria ser a pessoa desenvolvedora a ganhar o
+            concurso TrybeTrip?</label
+          >
+          <textarea
+            name="texto"
+            id="textarea"
+            cols="30"
+            maxlength="500"
+            class="form-control"
+          ></textarea>
+          <span id="passwordHelpInline" class="form-text">
+            Limite de 500 caracteres.
+        </div>
+        <div class="form-group mb-3">
+          <label for="data">Qual a melhor data para realizar sua viagem?</label>
+          <input type="date" name="data" id="data" />
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" name="oferta1" id="oferta1" />
+          <label for="oferta1"
+            >Gostaria de receber outras incríveis oportunidades oferecidas pela
+            Trybe?</label
+          >
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" name="oferta2" id="oferta2" required />
+          <label for="oferta2"
+            >Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.</label
+          >
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="btn btn-success submit">
+            Enviar
+          </button>
+          <button type="reset" class="btn btn-success">Limpar</button>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
